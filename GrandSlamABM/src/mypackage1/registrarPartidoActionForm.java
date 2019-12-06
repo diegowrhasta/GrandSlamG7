@@ -15,6 +15,7 @@ public class registrarPartidoActionForm extends ActionForm
   String equipo_visitante_id;
   String etapa_id;
   ArrayList tabla;
+  String grand_slam;
   /**
    * Reset all properties to their default values.
    * @param mapping The ActionMapping used to select this instance.
@@ -113,5 +114,15 @@ public class registrarPartidoActionForm extends ActionForm
   public void setTabla(ArrayList newTabla)
   {
     tabla = newTabla;
+  }
+
+  public String getGrand_slam()
+  {
+    return grand_slam;
+  }
+
+  public void setGrand_slam(String newGrand_slam)
+  {
+    grand_slam = newGrand_slam;
   }
 }

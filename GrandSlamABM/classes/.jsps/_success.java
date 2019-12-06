@@ -99,17 +99,36 @@ public class _success extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[5]);
-          /*@lineinfo:translated-code*//*@lineinfo:16^52*/          } while (__jsp_taghandler_1.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+            /*@lineinfo:translated-code*//*@lineinfo:17^1*/            {
+              org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_4=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag property value");
+              __jsp_taghandler_4.setParent(__jsp_taghandler_1);
+              __jsp_taghandler_4.setProperty("boton");
+              __jsp_taghandler_4.setValue("SALIR");
+              __jsp_tag_starteval=__jsp_taghandler_4.doStartTag();
+              if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
+              {
+                out=OracleJspRuntime.pushBodyIfNeeded(pageContext,__jsp_taghandler_4,__jsp_tag_starteval,out);
+                do {
+                } while (__jsp_taghandler_4.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+                out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
+              }
+              if (__jsp_taghandler_4.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
+                return;
+              OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_4);
+            }
+            /*@lineinfo:generated-code*/
+            out.write(__jsp_StaticText.text[6]);
+          /*@lineinfo:translated-code*//*@lineinfo:17^47*/          } while (__jsp_taghandler_1.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
         }
         if (__jsp_taghandler_1.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
           return;
         OracleJspRuntime.releaseTagHandler(pageContext,__jsp_taghandler_1);
       }
       /*@lineinfo:generated-code*/
-      out.write(__jsp_StaticText.text[6]);
-      /*@lineinfo:user-code*//*@lineinfo:22^15*/      out.print( new java.util.Date() );
-      /*@lineinfo:generated-code*/
       out.write(__jsp_StaticText.text[7]);
+      /*@lineinfo:user-code*//*@lineinfo:23^15*/      out.print( new java.util.Date() );
+      /*@lineinfo:generated-code*/
+      out.write(__jsp_StaticText.text[8]);
 
 
     }
@@ -128,7 +147,7 @@ public class _success extends oracle.jsp.runtime.HttpJsp {
 
   }
   private static class __jsp_StaticText {
-    private static final char text[][]=new char[8][];
+    private static final char text[][]=new char[9][];
     static {
       try {
       text[0] = 
@@ -144,8 +163,10 @@ public class _success extends oracle.jsp.runtime.HttpJsp {
       text[5] = 
       "\n".toCharArray();
       text[6] = 
-      "\n<footer>\n  <p>Programado por: Diego Balderrama</p>\n  <p>Contacto: <a href=\"mailto:balderrama.quino.diego@gmail.com\">\n  balderrama.quino.diego@gmail.com</a>.</p>\n  <p>Son las: ".toCharArray();
+      "\n".toCharArray();
       text[7] = 
+      "\n<footer>\n  <p>Programado por: Diego Balderrama</p>\n  <p>Contacto: <a href=\"mailto:balderrama.quino.diego@gmail.com\">\n  balderrama.quino.diego@gmail.com</a>.</p>\n  <p>Son las: ".toCharArray();
+      text[8] = 
       "</p>\n</footer> \n</body>\n</html>\n".toCharArray();
       }
       catch (Throwable th) {

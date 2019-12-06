@@ -14,6 +14,7 @@
 <html:form action="/successAction">
 <html:submit property="boton" value="REGISTRAR" />
 <html:submit property="boton" value="VISUALIZAR" />
+<html:submit property="boton" value="SALIR" />
 </html:form>
 <footer>
   <p>Programado por: Diego Balderrama</p>

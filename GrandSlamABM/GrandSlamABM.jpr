@@ -61,6 +61,15 @@
       <Item class="oracle.jdeveloper.model.JavaSourceNode">
          <URL path="src/mypackage1/registrarPartidoAction.java"/>
       </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+         <URL path="src/mypackage1/Modalidad.java"/>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+         <URL path="src/mypackage1/Etapa.java"/>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+         <URL path="src/mypackage1/Equipo.java"/>
+      </Item>
    </listOfChildren>
    <ownerMap/>
    <projectDocPath>

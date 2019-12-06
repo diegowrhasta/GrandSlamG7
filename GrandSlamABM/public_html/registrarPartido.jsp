@@ -14,28 +14,43 @@ Registrar Partido
 Partido a registrar:
 </h2>
 <html:form action="/registrar">
+Partido ID:
 <html:text property="partido_id" />
+<br>
+Modalidad:
 <html:select property="modalidad_id">
-<html:options collection="bulk" property="modalidad_id" labelProperty="modalidad" />
+<html:options collection="modalidades" property="modalidad_id" labelProperty="nombre" />
 </html:select>
-<html:select property="fecha">
-<html:options collection="bulk" property="torneo_id" labelProperty="anio_torneo" />
+<br>
+Fecha:
+<html:text property="fecha" />
+<br>
+Torneo:
+<html:select property="torneo_id">
+<html:options collection="bulk" property="torneo_id" labelProperty="grand_slam" />
 </html:select>
+<br>
+Etapa:
 <html:select property="etapa_id">
-<html:options collection="bulk" property="etapa_id" labelProperty="etapa" />
+<html:options collection="etapas" property="etapa_id" labelProperty="nombre" />
 </html:select>
+<br>
+Equipo Local ID:
 <html:select property="equipo_local_id">
-<html:options collection="bulk" property="equipo_local_id" labelProperty="equipo_local_id" />
+<html:options collection="equipos" property="equipo_id" labelProperty="equipo_id" />
 </html:select>
+<br>
+Equipo Visitante ID:
 <html:select property="equipo_visitante_id">
-<html:options collection="bulk" property="equipo_visitante_id" labelProperty="equipo_visitante_id" />
+<html:options collection="equipos" property="equipo_id" labelProperty="equipo_id" />
 </html:select>
-</html:form>
 <html:submit />
+</html:form>
 <h2>
 Leyenda de Equipos:
 </h2>
-<table class="lista" border=1 width="25%" height="25%"><tr>
+<table class="lista" border=1 width="25%" height="25%">
+<tr>
 <td>
 <center>Equipo_ID</center>
 </td>
@@ -49,13 +64,13 @@ Leyenda de Equipos:
 <logic:iterate id="tabla" indexId="index" name="legend" property="tabla">
 <tr>
 <td>
-<center><html:text name="tabla" property="equipo_id" readonly="true" /></center>
+<bean:write name="tabla" property="equipo_id" />
 </td>
 <td>
-<html:text name="tabla" property="jugador_1" readonly="true" />
+<bean:write name="tabla" property="jugador_1" />
 </td>
 <td>
-<html:text name="tabla" property="jugador_2" readonly="true" />
+<bean:write name="tabla" property="jugador_2" />
 </td>
 </tr>
 </logic:iterate>

@@ -41,7 +41,6 @@ public class registrarPartidoAction extends Action
     String cadena = "insert into partido_g7 values ("+partido_id+","+modalidad_id+",'"+fecha+"',"+torneo_id+","+equipo_local_id+","+equipo_visitante_id+","+etapa_id+")";
     System.out.println(cadena);
          int a = conn.InsertaDatos(cadena);
-          
          return mapping.findForward("success");
 	      }
 	

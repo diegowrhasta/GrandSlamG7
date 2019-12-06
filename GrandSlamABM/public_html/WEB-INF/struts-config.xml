@@ -10,6 +10,7 @@
     <forward name="success" path="/success.jsp"/>
     <forward name="failure" path="/failure.jsp"/>
     <forward name="registrarPartido" path="/registrarPartido.jsp"/>
+    <forward name="login" path="/login.jsp"/>
   </global-forwards>
   <action-mappings>
     <action path="/login" type="mypackage1.LoginAction" name="LoginForm" input="login.jsp" scope="request"/>
