@@ -48,10 +48,10 @@ public class _success extends oracle.jsp.runtime.HttpJsp {
 
       out.write(__jsp_StaticText.text[0]);
       out.write(__jsp_StaticText.text[1]);
-      /*@lineinfo:user-code*//*@lineinfo:12^24*/      out.print(session.getAttribute("nombre"));
+      /*@lineinfo:user-code*//*@lineinfo:13^24*/      out.print(session.getAttribute("nombre"));
       /*@lineinfo:generated-code*/
       out.write(__jsp_StaticText.text[2]);
-      /*@lineinfo:translated-code*//*@lineinfo:14^1*/      {
+      /*@lineinfo:translated-code*//*@lineinfo:15^1*/      {
         org.apache.struts.taglib.html.FormTag __jsp_taghandler_1=(org.apache.struts.taglib.html.FormTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.FormTag.class,"org.apache.struts.taglib.html.FormTag action");
         __jsp_taghandler_1.setParent(null);
         __jsp_taghandler_1.setAction("/successAction");
@@ -61,7 +61,7 @@ public class _success extends oracle.jsp.runtime.HttpJsp {
           do {
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[3]);
-            /*@lineinfo:translated-code*//*@lineinfo:15^1*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:16^1*/            {
               org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_2=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag property value");
               __jsp_taghandler_2.setParent(__jsp_taghandler_1);
               __jsp_taghandler_2.setProperty("boton");
@@ -80,7 +80,7 @@ public class _success extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[4]);
-            /*@lineinfo:translated-code*//*@lineinfo:16^1*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:17^1*/            {
               org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_3=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag property value");
               __jsp_taghandler_3.setParent(__jsp_taghandler_1);
               __jsp_taghandler_3.setProperty("boton");
@@ -99,7 +99,7 @@ public class _success extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[5]);
-            /*@lineinfo:translated-code*//*@lineinfo:17^1*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:18^1*/            {
               org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_4=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag property value");
               __jsp_taghandler_4.setParent(__jsp_taghandler_1);
               __jsp_taghandler_4.setProperty("boton");
@@ -118,7 +118,7 @@ public class _success extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[6]);
-          /*@lineinfo:translated-code*//*@lineinfo:17^47*/          } while (__jsp_taghandler_1.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+          /*@lineinfo:translated-code*//*@lineinfo:18^47*/          } while (__jsp_taghandler_1.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
         }
         if (__jsp_taghandler_1.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
           return;
@@ -126,7 +126,7 @@ public class _success extends oracle.jsp.runtime.HttpJsp {
       }
       /*@lineinfo:generated-code*/
       out.write(__jsp_StaticText.text[7]);
-      /*@lineinfo:user-code*//*@lineinfo:23^15*/      out.print( new java.util.Date() );
+      /*@lineinfo:user-code*//*@lineinfo:28^15*/      out.print( new java.util.Date() );
       /*@lineinfo:generated-code*/
       out.write(__jsp_StaticText.text[8]);
 
@@ -153,7 +153,7 @@ public class _success extends oracle.jsp.runtime.HttpJsp {
       text[0] = 
       "\n".toCharArray();
       text[1] = 
-      "\n<html>\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\n<title>\n¡Bienvenido!\n</title>\n</head>\n<body>\n<h2>\n¡Bienvenido de vuelta, ".toCharArray();
+      "\n<html>\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\n<title>\n¡Bienvenido!\n</title>\n<link rel=\"stylesheet\" href=\"css/estilos.css\" type=\"text/css\"/>\n</head>\n<body>\n<h2  class=\"h1\">\n¡Bienvenido de vuelta, ".toCharArray();
       text[2] = 
       "!\n</h2>\n".toCharArray();
       text[3] = 
@@ -165,7 +165,7 @@ public class _success extends oracle.jsp.runtime.HttpJsp {
       text[6] = 
       "\n".toCharArray();
       text[7] = 
-      "\n<footer>\n  <p>Programado por: Diego Balderrama</p>\n  <p>Contacto: <a href=\"mailto:balderrama.quino.diego@gmail.com\">\n  balderrama.quino.diego@gmail.com</a>.</p>\n  <p>Son las: ".toCharArray();
+      "\n<footer class=\"message\">\n  <p>Jefe de Proyecto: Diego Balderrama</p>\n  <p>Programado por: Diego Balderrama, Eric Vargas</p>\n  <p>Diseñado por: Diego Pardo</p>\n  <p>Contacto: <a href=\"mailto:balderrama.quino.diego@gmail.com\">\n  balderrama.quino.diego@gmail.com</a>.</p>\n  <p colspan=\"1\">          <a href=\"mailto:parduccinward@gmail.com\">\n  parduccinward@gmail.com</a>.</p>\n  <p>Son las: ".toCharArray();
       text[8] = 
       "</p>\n</footer> \n</body>\n</html>\n".toCharArray();
       }

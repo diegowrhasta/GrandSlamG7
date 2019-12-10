@@ -2,20 +2,23 @@
 <%@ taglib uri="/WEB-INF/struts-bean.tld" prefix="bean" %>
 <%@ taglib uri="/WEB-INF/struts-html.tld" prefix="html" %>
 <%@ page contentType="text/html;charset=windows-1252"%>
-<html>
+<html class="formulario">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<title>
+<title class="h1">
 Registrar Partido
 </title>
+<link rel="stylesheet" href="css/estilos.css" type="text/css"/>
 </head>
+<script language="JavaScript" src="jscript/valida.js"></script>
+<script language="JavaScript" src="jscript/grandslam.js"></script>
 <body>
-<h2>
+<h2 class="h2">
 Partido a registrar:
 </h2>
-<html:form action="/registrar">
+<html:form action="/registrar" onsubmit="return fParams( )">
 Partido ID:
-<html:text property="partido_id" />
+<html:text property="partido_id" onkeypress="EvaluateText('%d', this)"/>
 <br>
 Modalidad:
 <html:select property="modalidad_id">
@@ -23,7 +26,7 @@ Modalidad:
 </html:select>
 <br>
 Fecha:
-<html:text property="fecha" />
+<html:text property="fecha"/>
 <br>
 Torneo:
 <html:select property="torneo_id">

@@ -70,6 +70,19 @@
       <Item class="oracle.jdeveloper.model.JavaSourceNode">
          <URL path="src/mypackage1/Equipo.java"/>
       </Item>
+      <Item class="oracle.jdeveloper.model.JspSourceNode">
+         <URL path="public_html/visualizar.jsp"/>
+         <encoding>windows-1252</encoding>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+         <URL path="src/mypackage1/Partido.java"/>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+         <URL path="src/mypackage1/VisualizarForm.java"/>
+      </Item>
+      <Item class="oracle.jdeveloper.model.JavaSourceNode">
+         <URL path="src/mypackage1/VisualizarAction.java"/>
+      </Item>
    </listOfChildren>
    <ownerMap/>
    <projectDocPath>

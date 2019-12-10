@@ -129,7 +129,39 @@ public class successAction extends Action
         }
     }
     else if(opcion.equals("VISUALIZAR")){
-      return mapping.findForward("success");
+     
+      Connection cn = null;
+        ConnectDB conn = new ConnectDB();
+        ResultSet rsConsulta = null;
+        try{
+            cn = conn.conexion;            
+             //Partidos Query 
+            String query = "select a.partido_id, b.NOMBRE as Modalidad, c.nombre as Grand_Slam, d.anio as Anio_Torneo, e.nombre as Etapa, a.EQUIPO_LOCAL_ID, a.EQUIPO_VISITANTE_ID  from PARTIDO_G7 a, modalidad_g7 b, GRAND_SLAM_G7 c, TORNEO_G7 d, ETAPA_G7 e, equipo_g7 f where a.MODALIDAD_ID=b.MODALIDAD_ID and c.id=d.GS_ID and d.TORNEO_ID=a.TORNEO_ID and e.ETAPA_ID=a.ETAPA_ID and f.EQUIPO_ID=a.EQUIPO_LOCAL_ID order by 1";
+            rsConsulta = conn.getData(query);
+            ArrayList partidos = new ArrayList();
+            while(rsConsulta.next()){
+                Partido p = new Partido();
+                p.setPartido_id(rsConsulta.getString("partido_id"));
+                p.setModalidad(rsConsulta.getString("modalidad"));
+                p.setGrand_slam(rsConsulta.getString("grand_Slam"));
+                p.setAnio_torneo(rsConsulta.getString("anio_torneo"));
+                p.setEtapa(rsConsulta.getString("etapa"));
+                p.setEquipo_local_id(rsConsulta.getString("equipo_local_id"));
+                p.setEquipo_visitante_id(rsConsulta.getString("equipo_visitante_id"));
+                partidos.add(p);
+            }
+            VisualizarForm ff = new VisualizarForm();
+            ff.setTabla2(partidos);
+            request.getSession().setAttribute("partidos",ff);
+            return mapping.findForward("visualizar");
+        }
+        catch(Exception e){
+            e.printStackTrace();
+            return mapping.findForward("failure");
+        }
+        finally{
+            conn.closeConnection();
+        }
     }
     else{
       return mapping.findForward("login");

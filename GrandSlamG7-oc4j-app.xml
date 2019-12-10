@@ -1,9 +1,9 @@
 <?xml version = '1.0' encoding = 'windows-1252'?>
 <!DOCTYPE orion-application PUBLIC "-//Evermind//DTD J2EE Application runtime 1.2//EN" "http://xmlns.oracle.com/ias/dtds/orion-application.dtd">
 <orion-application>
-   <web-module id="GrandSlamG7-GrandSlamABM-webapp" path="E:\jdev\jdev\mywork\GrandSlamG7\GrandSlamABM\public_html"/>
+   <web-module id="GrandSlamG7-GrandSlamABM-webapp" path="C:\PrograFinal\jdev\mywork\GrandSlamG7\GrandSlamABM\public_html"/>
   <log>
     <file path="GrandSlamG7-oc4j-app.log"/>
   </log>
-   <data-sources path="E:\jdev\jdev\mywork\GrandSlamG7\GrandSlamG7-data-sources.xml"/>
+   <data-sources path="C:\PrograFinal\jdev\mywork\GrandSlamG7\GrandSlamG7-data-sources.xml"/>
 </orion-application>

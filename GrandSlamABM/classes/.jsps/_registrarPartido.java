@@ -50,19 +50,21 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
       out.write(__jsp_StaticText.text[1]);
       out.write(__jsp_StaticText.text[2]);
       out.write(__jsp_StaticText.text[3]);
-      /*@lineinfo:translated-code*//*@lineinfo:16^1*/      {
-        org.apache.struts.taglib.html.FormTag __jsp_taghandler_1=(org.apache.struts.taglib.html.FormTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.FormTag.class,"org.apache.struts.taglib.html.FormTag action");
+      /*@lineinfo:translated-code*//*@lineinfo:19^1*/      {
+        org.apache.struts.taglib.html.FormTag __jsp_taghandler_1=(org.apache.struts.taglib.html.FormTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.FormTag.class,"org.apache.struts.taglib.html.FormTag action onsubmit");
         __jsp_taghandler_1.setParent(null);
         __jsp_taghandler_1.setAction("/registrar");
+        __jsp_taghandler_1.setOnsubmit("return fParams( )");
         __jsp_tag_starteval=__jsp_taghandler_1.doStartTag();
         if (OracleJspRuntime.checkStartTagEval(__jsp_tag_starteval))
         {
           do {
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[4]);
-            /*@lineinfo:translated-code*//*@lineinfo:18^1*/            {
-              org.apache.struts.taglib.html.TextTag __jsp_taghandler_2=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag property");
+            /*@lineinfo:translated-code*//*@lineinfo:21^1*/            {
+              org.apache.struts.taglib.html.TextTag __jsp_taghandler_2=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag onkeypress property");
               __jsp_taghandler_2.setParent(__jsp_taghandler_1);
+              __jsp_taghandler_2.setOnkeypress("EvaluateText('%d', this)");
               __jsp_taghandler_2.setProperty("partido_id");
               __jsp_tag_starteval=__jsp_taghandler_2.doStartTag();
               if (OracleJspRuntime.checkStartBodyTagEval(__jsp_tag_starteval))
@@ -78,7 +80,7 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[5]);
-            /*@lineinfo:translated-code*//*@lineinfo:21^1*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:24^1*/            {
               org.apache.struts.taglib.html.SelectTag __jsp_taghandler_3=(org.apache.struts.taglib.html.SelectTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SelectTag.class,"org.apache.struts.taglib.html.SelectTag property");
               __jsp_taghandler_3.setParent(__jsp_taghandler_1);
               __jsp_taghandler_3.setProperty("modalidad_id");
@@ -89,7 +91,7 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
                 do {
                   /*@lineinfo:generated-code*/
                   out.write(__jsp_StaticText.text[6]);
-                  /*@lineinfo:translated-code*//*@lineinfo:22^1*/                  {
+                  /*@lineinfo:translated-code*//*@lineinfo:25^1*/                  {
                     org.apache.struts.taglib.html.OptionsTag __jsp_taghandler_4=(org.apache.struts.taglib.html.OptionsTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.OptionsTag.class,"org.apache.struts.taglib.html.OptionsTag collection labelProperty property");
                     __jsp_taghandler_4.setParent(__jsp_taghandler_3);
                     __jsp_taghandler_4.setCollection("modalidades");
@@ -107,7 +109,7 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
                   }
                   /*@lineinfo:generated-code*/
                   out.write(__jsp_StaticText.text[7]);
-                /*@lineinfo:translated-code*//*@lineinfo:22^89*/                } while (__jsp_taghandler_3.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+                /*@lineinfo:translated-code*//*@lineinfo:25^89*/                } while (__jsp_taghandler_3.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
               }
               if (__jsp_taghandler_3.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
@@ -116,7 +118,7 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[8]);
-            /*@lineinfo:translated-code*//*@lineinfo:26^1*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:29^1*/            {
               org.apache.struts.taglib.html.TextTag __jsp_taghandler_5=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag property");
               __jsp_taghandler_5.setParent(__jsp_taghandler_1);
               __jsp_taghandler_5.setProperty("fecha");
@@ -134,7 +136,7 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[9]);
-            /*@lineinfo:translated-code*//*@lineinfo:29^1*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:32^1*/            {
               org.apache.struts.taglib.html.SelectTag __jsp_taghandler_6=(org.apache.struts.taglib.html.SelectTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SelectTag.class,"org.apache.struts.taglib.html.SelectTag property");
               __jsp_taghandler_6.setParent(__jsp_taghandler_1);
               __jsp_taghandler_6.setProperty("torneo_id");
@@ -145,7 +147,7 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
                 do {
                   /*@lineinfo:generated-code*/
                   out.write(__jsp_StaticText.text[10]);
-                  /*@lineinfo:translated-code*//*@lineinfo:30^1*/                  {
+                  /*@lineinfo:translated-code*//*@lineinfo:33^1*/                  {
                     org.apache.struts.taglib.html.OptionsTag __jsp_taghandler_7=(org.apache.struts.taglib.html.OptionsTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.OptionsTag.class,"org.apache.struts.taglib.html.OptionsTag collection labelProperty property");
                     __jsp_taghandler_7.setParent(__jsp_taghandler_6);
                     __jsp_taghandler_7.setCollection("bulk");
@@ -163,7 +165,7 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
                   }
                   /*@lineinfo:generated-code*/
                   out.write(__jsp_StaticText.text[11]);
-                /*@lineinfo:translated-code*//*@lineinfo:30^83*/                } while (__jsp_taghandler_6.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+                /*@lineinfo:translated-code*//*@lineinfo:33^83*/                } while (__jsp_taghandler_6.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
               }
               if (__jsp_taghandler_6.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
@@ -172,7 +174,7 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[12]);
-            /*@lineinfo:translated-code*//*@lineinfo:34^1*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:37^1*/            {
               org.apache.struts.taglib.html.SelectTag __jsp_taghandler_8=(org.apache.struts.taglib.html.SelectTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SelectTag.class,"org.apache.struts.taglib.html.SelectTag property");
               __jsp_taghandler_8.setParent(__jsp_taghandler_1);
               __jsp_taghandler_8.setProperty("etapa_id");
@@ -183,7 +185,7 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
                 do {
                   /*@lineinfo:generated-code*/
                   out.write(__jsp_StaticText.text[13]);
-                  /*@lineinfo:translated-code*//*@lineinfo:35^1*/                  {
+                  /*@lineinfo:translated-code*//*@lineinfo:38^1*/                  {
                     org.apache.struts.taglib.html.OptionsTag __jsp_taghandler_9=(org.apache.struts.taglib.html.OptionsTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.OptionsTag.class,"org.apache.struts.taglib.html.OptionsTag collection labelProperty property");
                     __jsp_taghandler_9.setParent(__jsp_taghandler_8);
                     __jsp_taghandler_9.setCollection("etapas");
@@ -201,7 +203,7 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
                   }
                   /*@lineinfo:generated-code*/
                   out.write(__jsp_StaticText.text[14]);
-                /*@lineinfo:translated-code*//*@lineinfo:35^80*/                } while (__jsp_taghandler_8.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+                /*@lineinfo:translated-code*//*@lineinfo:38^80*/                } while (__jsp_taghandler_8.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
               }
               if (__jsp_taghandler_8.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
@@ -210,7 +212,7 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[15]);
-            /*@lineinfo:translated-code*//*@lineinfo:39^1*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:42^1*/            {
               org.apache.struts.taglib.html.SelectTag __jsp_taghandler_10=(org.apache.struts.taglib.html.SelectTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SelectTag.class,"org.apache.struts.taglib.html.SelectTag property");
               __jsp_taghandler_10.setParent(__jsp_taghandler_1);
               __jsp_taghandler_10.setProperty("equipo_local_id");
@@ -221,7 +223,7 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
                 do {
                   /*@lineinfo:generated-code*/
                   out.write(__jsp_StaticText.text[16]);
-                  /*@lineinfo:translated-code*//*@lineinfo:40^1*/                  {
+                  /*@lineinfo:translated-code*//*@lineinfo:43^1*/                  {
                     org.apache.struts.taglib.html.OptionsTag __jsp_taghandler_11=(org.apache.struts.taglib.html.OptionsTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.OptionsTag.class,"org.apache.struts.taglib.html.OptionsTag collection labelProperty property");
                     __jsp_taghandler_11.setParent(__jsp_taghandler_10);
                     __jsp_taghandler_11.setCollection("equipos");
@@ -239,7 +241,7 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
                   }
                   /*@lineinfo:generated-code*/
                   out.write(__jsp_StaticText.text[17]);
-                /*@lineinfo:translated-code*//*@lineinfo:40^85*/                } while (__jsp_taghandler_10.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+                /*@lineinfo:translated-code*//*@lineinfo:43^85*/                } while (__jsp_taghandler_10.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
               }
               if (__jsp_taghandler_10.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
@@ -248,7 +250,7 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[18]);
-            /*@lineinfo:translated-code*//*@lineinfo:44^1*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:47^1*/            {
               org.apache.struts.taglib.html.SelectTag __jsp_taghandler_12=(org.apache.struts.taglib.html.SelectTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SelectTag.class,"org.apache.struts.taglib.html.SelectTag property");
               __jsp_taghandler_12.setParent(__jsp_taghandler_1);
               __jsp_taghandler_12.setProperty("equipo_visitante_id");
@@ -259,7 +261,7 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
                 do {
                   /*@lineinfo:generated-code*/
                   out.write(__jsp_StaticText.text[19]);
-                  /*@lineinfo:translated-code*//*@lineinfo:45^1*/                  {
+                  /*@lineinfo:translated-code*//*@lineinfo:48^1*/                  {
                     org.apache.struts.taglib.html.OptionsTag __jsp_taghandler_13=(org.apache.struts.taglib.html.OptionsTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.OptionsTag.class,"org.apache.struts.taglib.html.OptionsTag collection labelProperty property");
                     __jsp_taghandler_13.setParent(__jsp_taghandler_12);
                     __jsp_taghandler_13.setCollection("equipos");
@@ -277,7 +279,7 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
                   }
                   /*@lineinfo:generated-code*/
                   out.write(__jsp_StaticText.text[20]);
-                /*@lineinfo:translated-code*//*@lineinfo:45^85*/                } while (__jsp_taghandler_12.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+                /*@lineinfo:translated-code*//*@lineinfo:48^85*/                } while (__jsp_taghandler_12.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
                 out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
               }
               if (__jsp_taghandler_12.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
@@ -286,7 +288,7 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[21]);
-            /*@lineinfo:translated-code*//*@lineinfo:47^1*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:50^1*/            {
               org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_14=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag");
               __jsp_taghandler_14.setParent(__jsp_taghandler_1);
               __jsp_tag_starteval=__jsp_taghandler_14.doStartTag();
@@ -303,7 +305,7 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[22]);
-          /*@lineinfo:translated-code*//*@lineinfo:47^16*/          } while (__jsp_taghandler_1.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+          /*@lineinfo:translated-code*//*@lineinfo:50^16*/          } while (__jsp_taghandler_1.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
         }
         if (__jsp_taghandler_1.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
           return;
@@ -311,7 +313,7 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
       }
       /*@lineinfo:generated-code*/
       out.write(__jsp_StaticText.text[23]);
-      /*@lineinfo:translated-code*//*@lineinfo:64^1*/      {
+      /*@lineinfo:translated-code*//*@lineinfo:67^1*/      {
         org.apache.struts.taglib.logic.IterateTag __jsp_taghandler_15=(org.apache.struts.taglib.logic.IterateTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.logic.IterateTag.class,"org.apache.struts.taglib.logic.IterateTag id indexId name property");
         __jsp_taghandler_15.setParent(null);
         __jsp_taghandler_15.setId("tabla");
@@ -329,7 +331,7 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
             index = (java.lang.Integer) pageContext.findAttribute("index");
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[24]);
-            /*@lineinfo:translated-code*//*@lineinfo:67^1*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:70^1*/            {
               org.apache.struts.taglib.bean.WriteTag __jsp_taghandler_16=(org.apache.struts.taglib.bean.WriteTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.WriteTag.class,"org.apache.struts.taglib.bean.WriteTag name property");
               __jsp_taghandler_16.setParent(__jsp_taghandler_15);
               __jsp_taghandler_16.setName("tabla");
@@ -346,7 +348,7 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[25]);
-            /*@lineinfo:translated-code*//*@lineinfo:70^1*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:73^1*/            {
               org.apache.struts.taglib.bean.WriteTag __jsp_taghandler_17=(org.apache.struts.taglib.bean.WriteTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.WriteTag.class,"org.apache.struts.taglib.bean.WriteTag name property");
               __jsp_taghandler_17.setParent(__jsp_taghandler_15);
               __jsp_taghandler_17.setName("tabla");
@@ -363,7 +365,7 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[26]);
-            /*@lineinfo:translated-code*//*@lineinfo:73^1*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:76^1*/            {
               org.apache.struts.taglib.bean.WriteTag __jsp_taghandler_18=(org.apache.struts.taglib.bean.WriteTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.WriteTag.class,"org.apache.struts.taglib.bean.WriteTag name property");
               __jsp_taghandler_18.setParent(__jsp_taghandler_15);
               __jsp_taghandler_18.setName("tabla");
@@ -380,7 +382,7 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[27]);
-          /*@lineinfo:translated-code*//*@lineinfo:73^49*/          } while (__jsp_taghandler_15.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+          /*@lineinfo:translated-code*//*@lineinfo:76^49*/          } while (__jsp_taghandler_15.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
           out=OracleJspRuntime.popBodyIfNeeded(pageContext,out);
         }
         if (__jsp_taghandler_15.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
@@ -417,7 +419,7 @@ public class _registrarPartido extends oracle.jsp.runtime.HttpJsp {
       text[2] = 
       "\n".toCharArray();
       text[3] = 
-      "\n<html>\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\n<title>\nRegistrar Partido\n</title>\n</head>\n<body>\n<h2>\nPartido a registrar:\n</h2>\n".toCharArray();
+      "\n<html class=\"formulario\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\n<title class=\"h1\">\nRegistrar Partido\n</title>\n<link rel=\"stylesheet\" href=\"css/estilos.css\" type=\"text/css\"/>\n</head>\n<script language=\"JavaScript\" src=\"jscript/valida.js\"></script>\n<script language=\"JavaScript\" src=\"jscript/grandslam.js\"></script>\n<body>\n<h2 class=\"h2\">\nPartido a registrar:\n</h2>\n".toCharArray();
       text[4] = 
       "\nPartido ID:\n".toCharArray();
       text[5] = 

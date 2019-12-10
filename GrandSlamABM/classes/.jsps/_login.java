@@ -49,7 +49,7 @@ public class _login extends oracle.jsp.runtime.HttpJsp {
       out.write(__jsp_StaticText.text[0]);
       out.write(__jsp_StaticText.text[1]);
       out.write(__jsp_StaticText.text[2]);
-      /*@lineinfo:translated-code*//*@lineinfo:15^1*/      {
+      /*@lineinfo:translated-code*//*@lineinfo:16^1*/      {
         org.apache.struts.taglib.html.ErrorsTag __jsp_taghandler_1=(org.apache.struts.taglib.html.ErrorsTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.ErrorsTag.class,"org.apache.struts.taglib.html.ErrorsTag");
         __jsp_taghandler_1.setParent(null);
         __jsp_tag_starteval=__jsp_taghandler_1.doStartTag();
@@ -64,7 +64,7 @@ public class _login extends oracle.jsp.runtime.HttpJsp {
       }
       /*@lineinfo:generated-code*/
       out.write(__jsp_StaticText.text[3]);
-      /*@lineinfo:translated-code*//*@lineinfo:16^1*/      {
+      /*@lineinfo:translated-code*//*@lineinfo:17^1*/      {
         org.apache.struts.taglib.html.FormTag __jsp_taghandler_2=(org.apache.struts.taglib.html.FormTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.FormTag.class,"org.apache.struts.taglib.html.FormTag action");
         __jsp_taghandler_2.setParent(null);
         __jsp_taghandler_2.setAction("/login");
@@ -74,7 +74,7 @@ public class _login extends oracle.jsp.runtime.HttpJsp {
           do {
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[4]);
-            /*@lineinfo:translated-code*//*@lineinfo:19^5*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:20^48*/            {
               org.apache.struts.taglib.bean.MessageTag __jsp_taghandler_3=(org.apache.struts.taglib.bean.MessageTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.MessageTag.class,"org.apache.struts.taglib.bean.MessageTag key");
               __jsp_taghandler_3.setParent(__jsp_taghandler_2);
               __jsp_taghandler_3.setKey("userid.prompt");
@@ -90,7 +90,7 @@ public class _login extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[5]);
-            /*@lineinfo:translated-code*//*@lineinfo:20^5*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:21^48*/            {
               org.apache.struts.taglib.html.TextTag __jsp_taghandler_4=(org.apache.struts.taglib.html.TextTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.TextTag.class,"org.apache.struts.taglib.html.TextTag property");
               __jsp_taghandler_4.setParent(__jsp_taghandler_2);
               __jsp_taghandler_4.setProperty("userid");
@@ -108,7 +108,7 @@ public class _login extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[6]);
-            /*@lineinfo:translated-code*//*@lineinfo:23^5*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:24^48*/            {
               org.apache.struts.taglib.bean.MessageTag __jsp_taghandler_5=(org.apache.struts.taglib.bean.MessageTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.bean.MessageTag.class,"org.apache.struts.taglib.bean.MessageTag key");
               __jsp_taghandler_5.setParent(__jsp_taghandler_2);
               __jsp_taghandler_5.setKey("password.prompt");
@@ -124,7 +124,7 @@ public class _login extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[7]);
-            /*@lineinfo:translated-code*//*@lineinfo:24^5*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:25^48*/            {
               org.apache.struts.taglib.html.PasswordTag __jsp_taghandler_6=(org.apache.struts.taglib.html.PasswordTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.PasswordTag.class,"org.apache.struts.taglib.html.PasswordTag property");
               __jsp_taghandler_6.setParent(__jsp_taghandler_2);
               __jsp_taghandler_6.setProperty("password");
@@ -142,7 +142,7 @@ public class _login extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[8]);
-            /*@lineinfo:translated-code*//*@lineinfo:27^1*/            {
+            /*@lineinfo:translated-code*//*@lineinfo:28^1*/            {
               org.apache.struts.taglib.html.SubmitTag __jsp_taghandler_7=(org.apache.struts.taglib.html.SubmitTag)OracleJspRuntime.getTagHandler(pageContext,org.apache.struts.taglib.html.SubmitTag.class,"org.apache.struts.taglib.html.SubmitTag");
               __jsp_taghandler_7.setParent(__jsp_taghandler_2);
               __jsp_tag_starteval=__jsp_taghandler_7.doStartTag();
@@ -159,7 +159,7 @@ public class _login extends oracle.jsp.runtime.HttpJsp {
             }
             /*@lineinfo:generated-code*/
             out.write(__jsp_StaticText.text[9]);
-          /*@lineinfo:translated-code*//*@lineinfo:27^16*/          } while (__jsp_taghandler_2.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
+          /*@lineinfo:translated-code*//*@lineinfo:28^15*/          } while (__jsp_taghandler_2.doAfterBody()==javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN);
         }
         if (__jsp_taghandler_2.doEndTag()==javax.servlet.jsp.tagext.Tag.SKIP_PAGE)
           return;
@@ -193,17 +193,17 @@ public class _login extends oracle.jsp.runtime.HttpJsp {
       text[1] = 
       "\n".toCharArray();
       text[2] = 
-      "\n<html>\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\n<title>\nGrandSlamG7\n</title>\n</head>\n<body>\n<h2>\nPágina de Ingreso\n</h2>\n".toCharArray();
+      "\n<html align=\"center\">\n<head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=windows-1252\">\n<title>\nGrandSlamG7\n</title>\n<link rel=\"stylesheet\" href=\"css/estilos.css\" type=\"text/css\"/>\n</head>\n<body>\n<h2 align =\"center\">\nLogin Grand Slam WebPage\n</h2>\n".toCharArray();
       text[3] = 
       "\n".toCharArray();
       text[4] = 
-      "\n<table border =0>\n<tr>\n<td>".toCharArray();
+      "\n<table width=\"350\" height=\"100\" align=\"center\" class=\"boxdetail\">\n<tr>\n<td colspan=\"2\" align=\"center\" class=\"boxhead\">".toCharArray();
       text[5] = 
-      "</td>\n<td>".toCharArray();
+      "</td>\n<td colspan=\"2\" align=\"center\" class=\"boxhead\">".toCharArray();
       text[6] = 
-      "</td>\n</tr>\n<tr>\n<td>".toCharArray();
+      "</td>\n</tr>\n<tr>\n<td colspan=\"2\" align=\"center\" class=\"boxhead\">".toCharArray();
       text[7] = 
-      "</td>\n<td>".toCharArray();
+      "</td>\n<td colspan=\"2\" align=\"center\" class=\"boxhead\">".toCharArray();
       text[8] = 
       "</td>\n</tr>\n</table>\n".toCharArray();
       text[9] = 
